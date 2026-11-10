@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0FC;
+}
+
+.navbar {
+    background-color: #e1e2e5;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: rgb(66, 64, 64);
+    text-decoration: none;
+}
+
+.topheader {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav li {
+    margin: 0 1rem;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: #001E73;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .titulo-principal {
+    color: #B0C40F;
+}
+
+.hero .descripcion {
+    color: white;
+}
+
+.hero .titulo-secundario {
+    color: #B0C40F;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.features h2,
+.features p {
+    margin: 0;
+}
+
+.call-to-action {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.factura-enviada {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #003DA5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.guru-days {
+    font-size: 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e9ecef;
+}
+
+.guru-days h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.guru-days {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.guru-logo {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.guru-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.guru-highlight {
+    color: #B0C40F;
+}
+
+.guru-discount {
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.discount-highlight {
+    color: #FF8C00;
+    font-weight: bold;
+}
+
+.pricing {
+    background-color: #001f3f;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.pricing-header {
+    margin-bottom: 20px;
+}
+
+.pricing-line {
+    height: 4px;
+    background-color: #B0C40F;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pricing-column {
+    flex: 1;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.pricing-column h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.pricing-column p {
+    font-size: 20px;
+}
+
+.totalmente-gratis {
+    font-weight: bold;
+    color: #B0C40F;
+}
+
+button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.video-title {
+    font-size: 28px;
+    color: #002152;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.video-iframe {
+    width: 50%;
+    height: 400px;
+    max-width: 800px;
+    border: none;
+}
+
+.youtube-link {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.additional-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    color: rgb(25, 33, 121);
+}
+
+.additional-info h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 13px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.info-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #B0C40F;
+}
+
+.info-icon {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        flex-direction: column;
+    }
+
+    .guru-title {
+        font-size: 36px;
+    }
+
+    .guru-discount {
+        font-size: 20px;
+    }
+}
